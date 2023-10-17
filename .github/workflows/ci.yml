@@ -126,6 +126,8 @@ jobs:
           - 16
         target:
           - linux/arm64
+          - linux/arm/v7
+          - linux/arm/v6
         variant:
           - bullseye
           - alpine3.15
