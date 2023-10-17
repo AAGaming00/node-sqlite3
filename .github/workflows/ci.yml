@@ -123,7 +123,7 @@ jobs:
       fail-fast: false
       matrix:
         node:
-          - 16
+          - 18
         target:
           - linux/arm64
           - linux/arm/v7
@@ -135,7 +135,7 @@ jobs:
           # musl x64 builds
           - target: linux/amd64
             variant: alpine3.15
-            node: 16
+            node: 18
     name: ${{ matrix.variant }} (node=${{ matrix.node }}, target=${{ matrix.target }})
     steps:
       - uses: actions/checkout@v3
